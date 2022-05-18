@@ -10,6 +10,36 @@ icon.onclick = function(){
     }
 
 }
-$('.message a') .click(function(){
+
+const click = document.getElementById("sites");
+const login = document.getElementById("login-page");
+click.addEventListener("click",()=>{
+    if (login.style.display === "none") {
+         login.style.display = "block"
+
+    } else {
+            login.style.display = "none"
+    } 
+   
+})
+
+
+function loginu() {
+    var input = document.getElementById("loginuser").value;
+    alert("Run away You are not Safe "+input);
+    }
+
+function createu() {
+    var input = document.getElementById("createuser").value;
+    alert("There is No Space For You " +input+ " Get Lost");
+    }
+// body.onclose("click",()=>{
+//     if (login.style.display === "block") {
+//          login.style.display = "none"
+
+//     }
+   
+// })
+$('.creates a') .click(function(){
 $('form').animate({height:"toggle", opacity: "toggle"}, "slow")
 })

@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=100%, initial-scale=1.0">
     <title>Marvel India @ksr</title>
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="index.css">
     
 </head>
-<body>
+<body id="body">
     <img class="mode" id="icon" src="img/moon.png" alt="">
     <div class="rectangle">
         <div>
@@ -21,7 +21,7 @@
             </for>
         </div>
         <div class="create">
-            Want Powers. <a class="site" href="">It's Free!</a>
+            Want Powers. <button id="sites" >It's Free!</button>
             <img class="btn1" src="img/drop.png" alt="">
         </div>
     </div>
@@ -32,11 +32,108 @@
     <div class="nav">
         <div class="navlow">
             <div class="subnav">
-                <button class="subbutton">All Posts</button>
-                <button class="subbutton">Article</button>
-                <button class="subbutton">Events</button>
-                <button class="subbutton">Movies</button>
-                <button class="subbutton">Web-Series</button>
+                <button class="subbutton">All Posts
+                    <ul>Yesterday</ul>
+                    <ul>Last Day+1</ul>
+                    <ul>This Month
+                </button>
+                <button class="subbutton">Article
+                    <ul>This Month</ul>
+                    <ul>Last Month</ul>
+                    <ul>2022
+                        <li>Jan</li>
+                        <li>Feb</li>
+                        <li>Mar</li>
+                        <li>Apr</li>
+                        <li>Other</li>
+                    </ul>
+                    <ul>2021
+                        <li>Jan</li>
+                        <li>Feb</li>
+                        <li>Mar</li>
+                        <li>Apr</li>
+                        <li>Other</li>
+                    </ul>
+                    <ul>Other</ul>
+                </button>
+                <button class="subbutton">Events
+                    <ul>2022
+                        <li>Jan</li>
+                        <li>Feb</li>
+                        <li>Mar</li>
+                        <li>Apr</li>
+                        <li>Other</li>
+                    </ul>
+                    <ul>2021
+                        <li>Jan</li>
+                        <li>Feb</li>
+                        <li>Mar</li>
+                        <li>Apr</li>
+                        <li>Other</li>
+                    </ul>
+                    <ul>2020
+                        <li>Jan</li>
+                        <li>Feb</li>
+                        <li>Mar</li>
+                        <li>Apr</li>
+                        <li>Other</li>
+                    </ul>
+                    <ul>Other </ul>
+                </button>
+                <button class="subbutton">Movies
+                    <ul>Iron Man
+                        <li> <a class="li" href="https://www.imdb.com/title/tt0371746/?ref_=nv_sr_srsg_0" target="_blank">Iron Man</a></li>
+
+                        <li><a class="li" href="https://www.imdb.com/title/tt1228705/?ref_=nv_sr_srsg_6" target="_blank">Iron Man 2</a></li>
+
+                        <li> <a class="li" href="https://www.imdb.com/title/tt1300854/?ref_=nv_sr_srsg_3" target="_blank"> Iron Man 3</a></li>
+                    </ul>
+                    <ul>Captain America
+                        <li> <a class="li" href="https://www.imdb.com/title/tt0458339/?ref_=nv_sr_srsg_3" target="_blank">CA: TFA</a></li>
+
+                        <li><a class="li" href="https://www.imdb.com/title/tt1843866/?ref_=nv_sr_srsg_7" target="_blank">CA: WS</a></li>
+
+                        <li><a class="li" href="https://www.imdb.com/title/tt3498820/?ref_=nv_sr_srsg_3" target="_blank">CA: CW</a></li>
+                    </ul>
+                    <ul>Thor
+                        <li><a class="li" href="https://www.imdb.com/title/tt0800369/" target="_blank">Thor</a></li>
+                        <li><a class="li" href="https://www.imdb.com/title/tt1981115/" target="_blank">Thor: THW</a></li>
+                        <li><a class="li" href="https://www.imdb.com/title/tt3501632/?ref_=nv_sr_srsg_3" target="_blank">Thor: Ragnarok</a></li>
+                        <li><a class="li" href="https://www.imdb.com/title/tt10648342/?ref_=nv_sr_srsg_0" target="_blank">Thor: LAT</a></li>
+                    </ul>
+                    <ul>OTHERS
+                        <li><a class="li" href="https://www.imdb.com/title/tt0800080/?ref_=nv_sr_srsg_0" target="_blank">The Incredible Hulk</a></li>
+                        <li><a class="li" href="https://www.imdb.com/title/tt3480822/?ref_=nv_sr_srsg_0" target="_blank">Black Widow</a></li>
+                        <li><a class="li" href="https://www.imdb.com/title/tt0478970/?ref_=nv_sr_srsg_3" target="_blank">Ant-Man</a></li>
+                        <li><a class="li" href="https://www.imdb.com/title/tt5095030/?ref_=nv_sr_srsg_6" target="_blank">Ant-Man and the Wasp</a></li>
+                        <li><a class="li" href="https://www.imdb.com/title/tt2015381/?ref_=nv_sr_srsg_0" target="_blank">GOTG: V1</a></li>
+                        <li><a class="li" href="https://www.imdb.com/title/tt3896198/?ref_=nv_sr_srsg_6" target="_blank">GOTG: V2</a></li>
+                        <li>Other</li>
+                    </ul>
+                </button>
+                <button class="subbutton">Web-Series
+                    <ul>Daredevil
+                        <li><a class="li" href="https://www.imdb.com/title/tt3322312/episodes?season=1" target="_blank">Season 1</a></li>
+                        <li><a class="li" href="https://www.imdb.com/title/tt3322312/episodes?season=2" target="_blank">Season 2</a></li>
+                        <li><a class="li" href="https://www.imdb.com/title/tt3322312/episodes?season=3" target="_blank">Season 3</a></li>
+                    </ul>
+                    <ul>Jassica-Jones
+                        <li><a class="li" href="https://www.imdb.com/title/tt2357547/episodes?season=1" target="_blank">Season 1</a></li>
+                        <li><a class="li" href="https://www.imdb.com/title/tt2357547/episodes?season=2" target="_blank">Season 2</a></li>
+                        <li><a class="li" href="https://www.imdb.com/title/tt2357547/episodes?season=3" target="_blank">Season 3</a></li>
+                    </ul>
+                    <ul>Iron fist
+                        <li><a class="li" href="https://www.imdb.com/title/tt3322310/episodes?season=1" target="_blank">Season 1</a></li>
+                        <li><a class="li" href="https://www.imdb.com/title/tt3322310/episodes?season=2" target="_blank">Season 2</a></li>
+                    </ul>
+                    <ul>The Punisher
+                        <li><a class="li" href="https://www.imdb.com/title/tt5675620/episodes?season=1" target="_blank">Season 1</a></li>
+                        <li><a class="li" href="https://www.imdb.com/title/tt5675620/episodes?season=2" target="_blank">Season 2</a></li>
+                    </ul>
+                    <ul>The Defenders
+                        <li><a class="li" href="https://www.imdb.com/title/tt4230076/?ref_=nv_sr_srsg_0" target="_blank">Season 1</a></li>
+                    </ul>
+                </button>
             </div>
             <div class="mainbtn">
                 <div>
@@ -289,17 +386,17 @@
     <div id="login-page">
         <div class="form">
             <form class="register-form">
-                <input type="text" placeholder="Name"/>
-                <input type="text" placeholder="Password"/>
-                <input type="text" placeholder="Email id"/>
-                <button>CREATE</button>
-                <p class="message"> Already Registered? <a class="site" href="#"> Login here </a></p>
+                <input id="createuser" type="text" name="name" value"" placeholder="Name" required/>
+                <input type="text" placeholder="Password" required/>
+                <input type="text" name="email" id="email" placeholder="abcd@mail.com"  required/>
+                <button onclick="createu()" >CREATE</button>
+                <p class="creates"> Already Registered? <br> <a class="site" href="#"> Login here </a></p>
             </form>
             <form class="login-form">
-                <input type="text" placeholder="Name"/>
-                <input type="text" placeholder="Password"/>
-                <button>LOGIN</button>
-                <p class="message"> Not Registered? <a class="site" href="#">Register here </a></p>
+                <input id="loginuser" type="text" name="name" value="" placeholder="Name" required/>
+                <input type="text" placeholder="Password" required/>
+                <button onclick="loginu()">LOGIN</button>
+                <p class="creates"> Not Registered? <br> <a class="site" href="#">Register here </a></p>
                 <h3>Login Using</h3>
                 <a href="" target="_blank"><img class="login-icon" src="img/google.png" alt="#"></a>
                 <a href="" target="_blank"><img class="login-icon" src="img/facebook.png" alt="#"></a>
