@@ -19,10 +19,12 @@ img.mode{
 :root{
     --primary-color: #FFFFFF;
     --secondary-color: #000000;
+    --third-color:rgba(47, 108, 229, 1);
 }
 .dark-theme{
     --primary-color: #000000;
     --secondary-color: #ffffff;
+    --third-color:rgb(197, 30, 0);
 }
 .rectangle{
     margin: 0%;
@@ -120,7 +122,7 @@ img.mode{
     width: 60vw;
 }
 .subbutton{
-    font-size: 1.7vw;
+    font-size: 2vw;
     margin: 0%;
     color: var(--secondary-color);
     background-color: var(--primary-color);
@@ -134,19 +136,19 @@ img.mode{
     border-bottom: .18vw solid var(--secondary-color);
 }
 ul{
-    font-size: smaller;
+    font-size:1.8vw;
     text-align: left;
     padding: 5px;
     margin: 0%;
     display: none;
 }
 .li{
-    color: rgb(197, 30, 0);
+    color: var(--third-color);
     text-decoration: none;    
 }
 li{
     margin: 0%;
-    font-size:1vw;
+    font-size:1.5vw;
     text-align: left;
     list-style: none;
     padding-left: 3 0px;
@@ -524,7 +526,7 @@ h3{
     }
     .subnav{
         width: 85vw;
-        justify-content: center;
+        justify-content: space-between;
     }
     .subbutton{
         font-size: 8px;
@@ -606,6 +608,9 @@ h3{
         font-size: 17px;
         font-family:cursive;
         font-weight: 700;
+    }
+    li{
+        font-size: 1.3vw;
     }
     .last {
         width: 80vw;
@@ -814,6 +819,9 @@ h3{
         font-size: 17px;
         font-family:cursive;
         font-weight: 700;
+    }
+    li{
+    font-size:1.5vw ;
     }
     .last {
         width: 80vw;
