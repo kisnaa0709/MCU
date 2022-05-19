@@ -27,44 +27,49 @@ img.mode{
     --third-color:rgb(197, 30, 0);
 }
 .rectangle{
+    position:relative;
     margin: 0%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between ;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items:center;
     height:40%;
-    left: 0px;
-    top: 0px;
+    padding: 1vw;
     padding-left: 3.5vw;
     padding-right: 3.5vw;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
     background: var(--primary-color);
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
 }
 #search{
-    padding-left: 8px;
     display: flex;
     flex-direction: row;
+    width: 250px;
+    box-sizing: border-box;
     align-content: center;
+    justify-content: center;
     background-color: var(--primary-color);
-    border-radius: 15px;
-    border: 2px solid var(--secondary-color);
+    border-bottom: 2px solid #e100ff;
+    position: relative;
+    left: 3.3vw;
 }
 .d-flex{
     position: relative;
     top: 5px;
+    left: 2px;
     width: 18px;
 }
 .form-control{
     color: var(--secondary-color);
-    width:max-content;
+    width:220px;
+    overflow: hidden;
     background-color : var(--primary-color);
     background-blend-mode:overlay;
-    border: 0px solid black;
-    border-radius: 12px;
+    align-content: center;
+    border: none;
+    outline: none;
     padding-bottom: 5px;
+    padding-left: 10px;
 }
 .form-control::placeholder{
     border: 0px solid black;
@@ -74,10 +79,6 @@ img.mode{
 .create{
     font-size: 1.5vw ;
     color: var(--secondary-color);
-}
-.creates{
-    font-size: 1.5vw ;
-    color: black;
 }
 #sites{
     border: 0 ;
@@ -89,8 +90,10 @@ img.mode{
 .site{
     text-decoration: none;
     font-weight: 700;
-    font-size: small;
-    color: rgb(255, 0, 0);
+    font-size: 1.5vw;
+    color:rgb(32, 240, 255);
+    padding-top: 1.5vw;
+    font-family:roboto;
 }
 .img1{
     display: flex;
@@ -438,63 +441,83 @@ h3{
     width: 25px;
 }
 #login-page{
-    position:absolute;
-    top: 0%;
-    width: 45%;
-    height: 50%;
-    padding: 10% 0 0;
-    margin-left:24% ;
+    position:fixed;
+    top: 4.7vw;
+    width: 100vw;
+    height: 100vw;
+    background-image: url(img/Avengers4.jpg);
+    box-sizing: border-box;
+    display: flex;
+    justify-content:center;
     display: none;
 }
 .form{
-    width:45%;
-    position: relative;
-    z-index: 1;
-    background-color: rgb(218, 218, 218);
-    margin: 0 auto 100px;
-    padding: 45px;
+    width:20vw;
+    padding: 2vw;
+    margin-left: 36vw;
+    margin-right: 35vw;
+    margin-top: 5vw;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(0, 152, 199, 0);
+    box-shadow: 0px 0px 10px 2px cornsilk;
     text-align: center;
-    border-radius: 30px;
 }
 .form input{
     font-family:"roboto" ;
-    outline: 1;
-    background: #f2f2f2;
+    background: #f2f2f200;
     width: 100%;
     border: 0;
     margin: 0 0 30px;
+    color: white;
     padding: 15px;
     box-sizing: border-box;
-    font-size: 16px;
-    border-radius: 10px;
+    font-size: 1vw;
+    border: 1px solid white;
+    border-radius: 4px;
+    height: 1.7vw;
+}
+form input::placeholder{
+    color: white;
+    background-color: none;
+
 }
 .form button{
     font-family: "roboto";
-    text-transform: uppercase;
-    outline: 0;
-    background: green;
-    width: 50%;
-    border: 0;
-    padding: 15PX;
+    background: none;
+    width: 100%;
+    box-shadow: 0px 0px 5px 1px cornsilk;
+    border: 1px solid white;
+    padding: 5PX;
     color: #FFFFFF;
     font-size: 14px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 5px;
 }
-.message{
+.form button:hover{
+    background:linear-gradient( to right,#006efd, #ff0000);
+    color:#FFFFFF;
+    font-weight: bold;
+}
+.creates{
     color: white;
-    font-size: 12px;
+    font-size: 1.5vw;
+    margin: 1vw;
+    font-family: 'Times New Roman', Times, serif;
 }
 .form .register-form{
     display: none;
 }
 .login-icon{
+    background-color: none;
+    border-radius: 30px;
     width: 2.5vw;
-    padding: 1vw;
+    border: none;
+    padding:0;
+    margin: 1vw;
 }
 .login-icon:hover{
-    width: 3vw;
-    padding: .75vw;
+    box-shadow: 0px 0px 10px 3px cornsilk;
 }
 @media all and (min-width: 270px) and (max-width: 445px){
     img.mode{
@@ -668,55 +691,87 @@ h3{
         font-weight: 600;
     }
     #login-page{
-        position: fixed;
-        top: 0%;
-        width: 50%;
-        height: 30%;
-        padding: 15%0 0;
-        margin-left:15vw;
-        margin-right:15vw;
+        position:fixed;
+        top: 10vw;
+        width: 100%;
+        height: 100%;
+        background-image: url(img/Avengers4.jpg);
+        background-size:     cover;                    
+        background-repeat:   no-repeat;
+        background-position: center center;
+        box-sizing: border-box;
+        display: flex;
+        justify-content:center;
+        display: none;
     }
     .form{
-        width: 100%;
-        position: relative;
-        margin: auto;
-        padding-left: 60px;
-        padding-right: 60px;
-        padding: 40px;
+        width: 50%;
+        margin-top: 20vw;
+        margin-right: 25vw;
+        margin-left: 25vw;
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: rgba(0, 152, 199, 0);
+        box-shadow: 0px 0px 10px 2px cornsilk;
         text-align: center;
-        border-radius: 30px;
     }
     .form input{
-        font-family:"roboto" ;
-        outline: 1;
-        background: #f2f2f2;
+        outline: none;
         width: 100%;
         height: 50%;
-        border: 0;
         margin: 0 0 15px;
         padding: 10px;
-        box-sizing: border-box;
         font-size: 14px;
-        border-radius: 10px;
+        font-family:"roboto" ;
+        background: #f2f2f200;
+        color: white;
+        box-sizing: border-box;
+        font-size: 1vw;
+        border: 1px solid white;
+        border-radius: 4px;
+    }
+    
+    form input::placeholder{
+        color: white;
+        background-color: none;
+    
     }
     .form button{
         font-family: "roboto";
-        text-transform: uppercase;
         outline: 0;
-        background: green;
-        width: 40%;
-        border: 0;
-        padding: 10PX;
+        padding: 8PX;
         color: #FFFFFF;
         font-size: 10px;
         cursor: pointer;
-        border-radius: 10px;
+        border-radius: 5px;
+        background: rgba(0, 128, 0, 0);
+        width: 100%;
+        box-shadow: 0px 0px 5px 1px cornsilk;
+        border: 1px solid white;
+    }
+    .creates{
+    color: white;
+    font-size: 2.5vw;
+    margin: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    .site{
+        padding: 0;
+        margin-top: 2vw;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     .login-icon{
+        background-color: whitesmoke;
+        border-radius: 30px;
+        padding: 3px;
+        margin: 1vw;
         width: 7vw;
     }
     .login-icon:active{
         width: 8vw;
+        box-shadow: 0px 0px 10px 3px cornsilk;
+    
     }
 
 }
@@ -879,52 +934,90 @@ h3{
         font-weight: 600;
     }
     #login-page{
-        position: fixed;
-        top: 0%;
-        width: 50%;
-        height: 30%;
-        padding: 15% 0 0;
-        margin-left:18% ;
+        position:fixed;
+        top: 8vw;
+        width: 100%;
+        height: 100%;
+        background-image: url(img/Avengers4.jpg);
+        background-size:     cover;                      /* <------ */
+        background-repeat:   no-repeat;
+        background-position: center center;
+        box-sizing: border-box;
+        display: flex;
+        justify-content:center;
+        display: none;
     }
     .form{
-        width: 100%;
-        position: relative;
-        margin: 0 auto 100px;
-        padding: 40px;
+        width: 50%;
+        margin-top: 20vw;
+        margin-right: 25vw;
+        margin-left: 25vw;
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: rgba(0, 152, 199, 0);
+        box-shadow: 0px 0px 10px 2px cornsilk;
         text-align: center;
-        border-radius: 30px;
     }
     .form input{
-        font-family:"roboto" ;
-        outline: 1;
-        background: #f2f2f2;
+        outline: none;
         width: 100%;
         height: 50%;
-        border: 0;
         margin: 0 0 15px;
         padding: 10px;
+        font-size: 2vw;
+        font-family:"roboto" ;
+        background: #f2f2f200;
+        color: white;
         box-sizing: border-box;
-        font-size: 14px;
-        border-radius: 10px;
+        font-size: 1vw;
+        border: 1px solid white;
+        border-radius: 4px;
+    }
+    
+    form input::placeholder{
+        
+        font-size: 2vw;
+        color: white;
+        background-color: none;
+    
     }
     .form button{
         font-family: "roboto";
-        text-transform: uppercase;
         outline: 0;
-        background: green;
-        width: 40%;
-        border: 0;
-        padding: 10PX;
+        padding: 8PX;
         color: #FFFFFF;
-        font-size: 10px;
+        font-size: 1.5vw;
         cursor: pointer;
-        border-radius: 10px;
+        border-radius: 5px;
+        background: rgba(0, 128, 0, 0);
+        width: 100%;
+        box-shadow: 0px 0px 5px 1px cornsilk;
+        border: 1px solid white;
+    }
+    .creates{
+    color: white;
+    font-size: 3vw;
+    margin: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    .site{
+        padding: 0;
+        margin-top: 2vw;
+        font-size: 2.5vw;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     .login-icon{
+        background-color: whitesmoke;
+        border-radius: 30px;
+        padding: 3px;
+        margin: 1vw;
         width: 7vw;
     }
     .login-icon:active{
         width: 8vw;
+        box-shadow: 0px 0px 10px 3px cornsilk;
+    
     }
 
 
@@ -963,48 +1056,90 @@ h3{
         font-weight: 700;
     }
     #login-page{
-        position: fixed;
-        top: 0%;
-        width: 50%;
-        height: 30%;
-        padding: 15% 0 0;
-        margin-left:18% ;
+        position:fixed;
+        top: 7.5vw;
+        width: 100%;
+        height: 100%;
+        background-image: url(img/Avengers4.jpg);
+        background-repeat:   no-repeat;
+        background-position: center center;
+        box-sizing: border-box;
+        display: flex;
+        justify-content:center;
+        display: none;
     }
     .form{
-        width: 100%;
-        position: relative;
-        z-index: 1;
-        background-color: rgba(206, 0, 0, 0.95);
-        margin: 0 auto 100px;
-        padding: 40px;
+        width: 50%;
+        margin-top: 20vw;
+        margin-right: 25vw;
+        margin-left: 25vw;
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: rgba(0, 152, 199, 0);
+        box-shadow: 0px 0px 10px 2px cornsilk;
         text-align: center;
-        border-radius: 30px;
     }
     .form input{
-        font-family:"roboto" ;
-        outline: 1;
-        background: #f2f2f2;
+        outline: none;
         width: 100%;
         height: 50%;
-        border: 0;
         margin: 0 0 15px;
         padding: 10px;
+        font-size: 2vw;
+        font-family:"roboto" ;
+        background: #f2f2f200;
+        color: white;
         box-sizing: border-box;
-        font-size: 14px;
-        border-radius: 10px;
+        font-size: 1vw;
+        border: 1px solid white;
+        border-radius: 4px;
+    }
+    
+    form input::placeholder{
+        
+        font-size: 2vw;
+        color: white;
+        background-color: none;
+    
     }
     .form button{
         font-family: "roboto";
-        text-transform: uppercase;
         outline: 0;
-        background: green;
-        width: 40%;
-        border: 0;
-        padding: 10PX;
+        padding: 8PX;
         color: #FFFFFF;
-        font-size: 10px;
+        font-size: 1.5vw;
         cursor: pointer;
-        border-radius: 10px;
+        border-radius: 5px;
+        background: rgba(0, 128, 0, 0);
+        width: 100%;
+        box-shadow: 0px 0px 5px 1px cornsilk;
+        border: 1px solid white;
     }
+    .creates{
+    color: white;
+    font-size: 3vw;
+    margin: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    .site{
+        padding: 0;
+        margin-top: 2vw;
+        font-size: 2.5vw;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .login-icon{
+        background-color: whitesmoke;
+        border-radius: 30px;
+        padding: 3px;
+        margin: 1vw;
+        width: 7vw;
+    }
+    .login-icon:active{
+        width: 8vw;
+        box-shadow: 0px 0px 10px 3px cornsilk;
+    
+    }
+
 }
 
