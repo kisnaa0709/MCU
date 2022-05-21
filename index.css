@@ -269,6 +269,7 @@ li{
 iframe{
     box-shadow: 0px 0px 5px 1.5px var(--secondary-color);
     width: 50.8vw;
+    margin-top: 1vw;
     height: 25vw;
 }
 .posts11{
@@ -304,6 +305,8 @@ iframe{
 }
 .postimg{
     width:50vw;
+    margin-top: 1vw;
+    box-shadow: 0px 0px 10px 1px var(--secondary-color);
 }
 h1{
     font-size:3vw;
@@ -675,7 +678,8 @@ form input::placeholder{
         font-weight: 700;
     }
     li{
-        font-size: 1.3vw;
+        font-size: 11px;
+        font-weight: 600;
     }
     .last {
         width: 80vw;
@@ -922,7 +926,8 @@ form input::placeholder{
         font-weight: 700;
     }
     li{
-    font-size:1.5vw ;
+    font: size 11px;
+    font-weight: 600;
     }
     .last {
         width: 80vw;
