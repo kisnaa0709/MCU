@@ -677,8 +677,12 @@ form input::placeholder{
         font-family:cursive;
         font-weight: 700;
     }
-    li{
+    ul{
         font-size: 11px;
+        font-weight: 600;
+    }
+    li{
+        font-size: 10px;
         font-weight: 600;
     }
     .last {
@@ -925,9 +929,13 @@ form input::placeholder{
         font-family:cursive;
         font-weight: 700;
     }
+    ul{
+        font-size: 11px;
+        font-weight: 600;
+    }
     li{
-    font: size 11px;
-    font-weight: 600;
+        font-size: 10px;
+        font-weight: 600;
     }
     .last {
         width: 80vw;
@@ -1184,10 +1192,10 @@ form input::placeholder{
         border: 1px solid white;
     }
     .creates{
-    color: white;
-    font-size: 3vw;
-    margin: 2vw;
-    font-family: 'Times New Roman', Times, serif;
+        color: white;
+        font-size: 3vw;
+        margin: 2vw;
+        font-family: 'Times New Roman', Times, serif;
     }
     .site{
         padding: 0;
