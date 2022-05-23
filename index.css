@@ -10,6 +10,11 @@ body{
     position: fixed;
     bottom: 20px;
     right: 20px;
+    transition: transform 100ms;
+}
+.mode:hover{
+    width: 5.5vw;
+    height: 5.5vw;
 }
 img.mode{
     width: 5vw;
@@ -88,6 +93,7 @@ img.mode{
     text-decoration: none;
     color: blue;
     font-size: 1.5vw ;
+    transition: transform 1s;
 }
 .site{
     text-decoration: none;
@@ -141,9 +147,10 @@ img.mode{
     border: 0px;
     text-align: left;
     font-weight: 700px;
+    transition: transform 1s;
 }
 .subbutton:hover{
-    
+    transform: translateY(-10px);
     box-shadow: 0px 0px 5px .5px var(--secondary-color);
     padding-bottom: 8px;
     margin: 0%;
@@ -155,12 +162,14 @@ ul{
     padding: 5px;
     margin: 0%;
     display: none;
+    transition: transform 1s;
 }
 .li{
     color: var(--secondary-color);
     text-decoration: none;    
 }
 li{
+    transition: transform 1s;
     margin: 0%;
     font-size:1.5vw;
     text-align: left;
@@ -199,6 +208,7 @@ li{
     align-items: center;
 }
 .write{
+    transition: transform 1s;
     margin-right: .5vw;
     font-size: 1.3vw;
     color: var(--secondary-color);
@@ -213,6 +223,7 @@ li{
     box-shadow: 0px 0px 5px .1px var(--secondary-color);
 }
 .join{
+    transition: transform 1s;
     margin-left: .2vw;
     font-weight: 500;
     font-size: 1.3vw;
@@ -226,6 +237,7 @@ li{
     align-content: center;
 }
 .join:hover, .create #sites:hover, .write:hover{
+    transform: translateY(-5px);
     color: #FFFFFF;
     background:linear-gradient( to right,hsl(229, 100%, 50%), hsl(0, 100%, 50%)) ;
     box-shadow: 0px 0px 0px 0px var(--secondary-color);

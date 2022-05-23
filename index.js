@@ -4,6 +4,7 @@ icon.onclick = function(){
     document.body.classList.toggle("dark-theme");
     if(document.body.classList.contains("dark-theme")){
        icon.src = "img/sun1.png";
+       icon.style = "transform :rotateZ(-360deg);";
     }
     else{
         icon.src = "img/moon.png";
