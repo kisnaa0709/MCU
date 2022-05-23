@@ -24,7 +24,7 @@ img.mode{
 :root{
     --primary-color: #FFFFFF;
     --secondary-color: #000000;
-    --third-color:rgba(47, 108, 229, 1);
+    --third-color:rgb(255, 81, 0);
 }
 .dark-theme{
     --primary-color: #000000;
@@ -147,7 +147,7 @@ img.mode{
     border: 0px;
     text-align: left;
     font-weight: 700px;
-    transition: transform 1s;
+    transition: transform 1.5s;
 }
 .subbutton:hover{
     transform: translateY(-10px);
@@ -162,7 +162,10 @@ ul{
     padding: 5px;
     margin: 0%;
     display: none;
-    transition: transform 1s;
+    transition: transform 1.5s;
+}
+ul:hover{
+    color: var(--third-color);
 }
 .li{
     color: var(--secondary-color);
