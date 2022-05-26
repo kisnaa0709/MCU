@@ -142,7 +142,7 @@
                     </button>
                 </div><img src="" alt="">
                 <div>    
-                    <button class="join"> Join now
+                    <button id="txt" class="join"> Join now
                         <img class="btn3" src="img/join.png" >
                     </button>
                 </div>
@@ -177,8 +177,7 @@
                                 <div class="last21">
                                     <img class="eye-share" src="img/eye.png" onclick="like1()" alt="">
                                 </div>
-                                <div id="likee1" class="views">3000</div>
-                                <div  class="views"> views</div> 
+                                <div id="likee1" class="views">3000 views</div>
                                 <div class="last22">
                                     <img class="eye-share" src="img/share.png" alt="">
                                 </div>
@@ -386,16 +385,16 @@
     </div>
     <div id="login-page">
         <div class="form">
-            <form class="register-form">
-                <input id="createuser" type="text" name="name" value"" placeholder="Name" required/>
-                <input type="text" placeholder="Password" required/>
+            <form id="form2" class="register-form">
+                <input id="createuser" type="text" name="name" value="" placeholder="Name" required/>
+                <input id="" type="text" placeholder="Password" required/>
                 <input type="text" name="email" id="email" placeholder="abcd@mail.com"  required/>
                 <button onclick="createu()" >CREATE</button>
                 <p class="creates"> Already Registered? <br> <a class="site" href="#"> Login here </a></p>
             </form>
-            <form class="login-form">
+            <form id="form1" class="login-form">
                 <input id="loginuser" type="text" name="name" value="" placeholder="Name" required/>
-                <input type="text" placeholder="Password" required/>
+                <input id="pass" type="number" value="" placeholder="Password" required/>
                 <button onclick="loginu()">LOGIN</button>
                 <p class="creates"> Not Registered? <br> <a class="site" href="#">Register here </a></p>
                 <h3 class="creates">OR</h3>
