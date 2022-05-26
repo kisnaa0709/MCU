@@ -64,7 +64,7 @@ function loginu() {
     let pass = document.getElementById("pass").value
     let login = document.getElementById("form1")
     login.style = "color: white;"
-    if (pass == 1234 && name == "Kishan"||name == "Abhishek"||name == "Shubham"||name == "Sidhant" ) {
+    if (pass == 1234 && name == "Kishan"||name == "Abhishek"||name == "Shubham"||name == "Sidhant"||name == "Aryan" ) {
         login.innerHTML = ("Welocome Back!!") + ("<br />")+ ("<br />") + name + ("<br />")+ ("<br />")
     } else {
         login.innerHTML = ("Username or Password Incorrect") + ("<br />")+ ("<br />") + ("Try Again") + ("<br />")+ ("<br />")
