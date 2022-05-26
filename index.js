@@ -1,19 +1,19 @@
-var icon = document.getElementById("icon");
+var icon = document.getElementById("icon")
 
 icon.onclick = function(){
-    document.body.classList.toggle("dark-theme");
+    document.body.classList.toggle("dark-theme")
     if(document.body.classList.contains("dark-theme")){
-       icon.src = "img/sun1.png";
-       icon.style = "transform :rotateZ(-360deg);";
+       icon.src = "img/sun1.png"
+       icon.style = "transform :rotateZ(-360deg);"
     }
     else{
-        icon.src = "img/moon.png";
+        icon.src = "img/moon.png"
     }
 
 }
 
-const click = document.getElementById("sites");
-const login = document.getElementById("login-page");
+const click = document.getElementById("sites")
+const login = document.getElementById("login-page")
 click.addEventListener("click",()=>{
     if (login.style.display === "none") {
          login.style.display = "block"
@@ -60,14 +60,31 @@ function like6(){
 
 
 function loginu() {
-    var input = document.getElementById("loginuser").value;
-    alert("Run away You are not Safe "+input);
+    let name = document.getElementById("loginuser").value
+    let pass = document.getElementById("pass").value
+    let login = document.getElementById("form1")
+    login.style = "color: white;"
+    if (pass == 1234 && name == "Kishan"||name == "Abhishek"||name == "Shubham"||name == "Sidhant" ) {
+        login.innerHTML = ("Welocome Back!!") + ("<br />")+ ("<br />") + name + ("<br />")+ ("<br />")
+    } else {
+        login.innerHTML = ("Username or Password Incorrect") + ("<br />")+ ("<br />") + ("Try Again") + ("<br />")+ ("<br />")
+        
+    }
+    
+
     }
 
 
 function createu() {
-    var input = document.getElementById("createuser").value;
-    alert("There is No Space For You " +input+ " Get Lost");
+    let name = document.getElementById("createuser").value
+    let signup = document.getElementById("form2")
+    let login = document.getElementById("form1")
+    
+    signup.innerHTML = ("Welocome!!") + ("<br />")+ ("<br />") + name + ("<br />")+ ("<br />")
+    signup.style = "block"
+    login.style = "none"
+    signup.style = "color: white;"
+
     }
 
 
