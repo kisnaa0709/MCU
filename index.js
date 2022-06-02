@@ -11,6 +11,16 @@ icon.onclick = function(){
     }
 
 }
+// function click() {
+// let login_dis = document.getElementById("login-page").style.display
+// if (login_dis == none) {
+//     login_dis = block
+// }else {
+//     login_dis = none
+// }
+
+
+// }
 
 const click = document.getElementById("sites")
 const login = document.getElementById("login-page")
